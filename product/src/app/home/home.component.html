@@ -1,9 +1,11 @@
 
 <div class="container">
-    <div class="list-group" *ngFor="let post of postsList">
-         <h5 class="list-group-item list-group-item-heading list-group-item-warning"> {{post.title}}</h5>
+    <div class="list-group" *ngFor="let post of postsList | paginate: { itemsPerPage: 17, currentPage: p }">
+         <h5 class="list-group-item list-group-item-heading card-heading-color"> {{post.title}}</h5>
         <p class="list-group-item list-group-item-text">{{post.body}}</p> 
     </div>
 </div>
+
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 
 

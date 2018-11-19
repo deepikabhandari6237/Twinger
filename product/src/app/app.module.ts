@@ -2,12 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {NgxPaginationModule} from 'ngx-pagination';
+
 import { AppComponent } from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {HomeComponent} from './home/home.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { PhotosComponent } from './photos/photos.component';
-import { UserPostsComponent } from './user_posts/user.posts.component';
+import { UserPostsComponent } from './users/user.posts.component';
+import {UsersComponent} from './users/users.component';
+
 import { APIService } from './shared/api.service';
 @NgModule({
   declarations: [
@@ -16,12 +21,15 @@ import { APIService } from './shared/api.service';
     HomeComponent,
     AlbumsComponent,
     PhotosComponent,
+    UsersComponent,
     UserPostsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    NgxPaginationModule
   ],
   providers: [APIService],
   bootstrap: [AppComponent]

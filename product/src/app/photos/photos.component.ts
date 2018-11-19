@@ -8,12 +8,10 @@ import { Photos } from './photos';
 })
 
 export class PhotosComponent {
+    
+    photosList:Photos[];
 
-    photosList: Photos[];
-    constructor( private apiService: APIService ) { }
-    ngOnInit() {
-        this.getAlbums();
-    }
+   constructor(private apiService:APIService){}
 
     getAlbums() {
         this.apiService.getAllPhotos().subscribe(
