@@ -1,11 +1,11 @@
 
-    <h5>Users</h5>
-    <div class="list-group">
+    <h5 class="users-title">Users</h5>
+    <div class="card">
         <div *ngFor="let user of usersList">                                                                                                                                                                                                                                                                          
-            <h5 class="list-group-item card-heading-color border-0">
-                <span class="fa fa-user"></span>  
+            <h6 class="card-title">
+                <span class="fa fa-user-circle"></span>  
                 {{user.name}}
-            </h5>
+            </h6>
         </div>
     </div>
 

@@ -1,17 +1,19 @@
 
 <div class="photo-item">
     <div class="flex-item" 
-         *ngFor="let photo of photosList | paginate: { itemsPerPage: 17, currentPage: p }">
-         <div class="card-deck">
+         *ngFor="let photo of photosList | paginate: { itemsPerPage: 15, currentPage: p }">
+         
             <div class="card" >
                 <img class="card-img-top" src={{photo.url}} alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text"> {{photo.title}}</p>
                 </div>
             </div>
-        </div>
+       
     </div>
 </div>
 
 
-  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+

@@ -14,12 +14,15 @@ and open the template in the editor.
 }
 
 .navbar-default{
-    background-color: 	#2b4251;
+    background-color: 	#006a4e;
     color:#dae9e4;
 }
 
 .nav-link,.navbar-brand{
     color:#dae9e4;
+    font-family:Times;
+    font-size: 1.28em;
+    font-style: italic;
 }
 
 .nav-link:focus,.nav-link:hover{
@@ -43,22 +46,24 @@ and open the template in the editor.
 
 .flex-left-wrapper{
     flex:1 0 25%;
-    border-right:2px solid #cecece;
+    border-right:1px solid #dae9e4;
 }
 
-flex-item{
+.flex-item{
     flex:2 0 0;
 
 }
 
-.list-group{
+
+.card{
     margin-top: 1rem;
+    width: 49rem;
+    padding: 1rem;
+    height:8rem;
 }
 
-.card-deck {
-    padding: 1rem;
-    width: 18rem;
-    height:23.5rem;
+.card-title{
+    color: #006a4e;
 }
 
 .photo-item{
@@ -70,11 +75,6 @@ flex-item{
     background-color:#dde2f9
 }
 
-.logo{
-    font-family:sans-serif;
-    font-size: 1.7em;
-}
-
 .ngx-pagination{
     margin:1rem;
     text-align: center;
@@ -83,5 +83,10 @@ flex-item{
 .add-post{
     margin-top: 2rem;
     text-align: center;
-    color:#2b4251
+    color:#006a4e;
 }
+
+.logo{
+    height: 3.7rem;
+}
+

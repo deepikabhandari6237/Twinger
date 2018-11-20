@@ -1,8 +1,10 @@
 
 <div class="container">
-    <div class="list-group" *ngFor="let album of albumsList | paginate: { itemsPerPage: 17, currentPage: p }">
-         <h5 class="list-group-item  card-heading-color"> {{album.title}}</h5>
+    <div class="card" >
+        <div *ngFor="let album of albumsList | paginate: { itemsPerPage: 17, currentPage: p }">
+             <h6 class="card-title"> {{album.title}}</h6>
+        </div>
     </div>
 </div>
 
-  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

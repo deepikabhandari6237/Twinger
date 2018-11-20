@@ -1,0 +1,10 @@
+.card{
+    margin-top: 1rem;
+    width: 49rem;
+    padding: 1rem;
+    height:auto;
+}
+
+.card-title{
+    color: #006a4e;
+}

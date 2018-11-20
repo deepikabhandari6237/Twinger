@@ -33,5 +33,8 @@ export class APIService {
           return this.http.get('https://jsonplaceholder.typicode.com/users')        
     }
   
+    addPost(data){
+        return this.http.post('https://jsonplaceholder.typicode.com/posts',data)
+    }
 
 }

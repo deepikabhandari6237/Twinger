@@ -4,7 +4,8 @@ import { Albums } from './albums';
 
 @Component({
     selector:'albums',
-    templateUrl:'albums.component.html'
+    templateUrl:'albums.component.html',
+    styleUrls:['albums.css']
 })
 
 export class AlbumsComponent{
