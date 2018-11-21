@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { PhotosComponent } from './photos/photos.component';
-import { UserPostsComponent } from './users/user.posts.component';
+import { NgbdModalBasic } from './users/user.posts.component';
 
 
 const routes: Routes = [{
@@ -23,7 +23,7 @@ const routes: Routes = [{
 },
 {
    path:'posts',
-   component: UserPostsComponent
+   component: NgbdModalBasic
    
 }];
 

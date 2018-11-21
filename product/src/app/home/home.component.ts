@@ -9,6 +9,7 @@ import { Posts } from './posts';
 export class HomeComponent implements OnInit {
 
     postsList: Posts[];
+     p: number = 1;
     constructor( private apiService: APIService ) { }
     ngOnInit() {
         this.getPosts();
@@ -16,9 +17,9 @@ export class HomeComponent implements OnInit {
 
     getPosts() {
         this.apiService.getAllPosts().subscribe(
-            ( data:Posts[] ) => {
+            ( data: Posts[] ) => {
                 this.postsList = data;
-                
+
             }, ( error ) => {
 
             } )

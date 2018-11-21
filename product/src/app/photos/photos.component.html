@@ -1,7 +1,6 @@
 
-<div class="photo-item">
-    <div class="flex-item" 
-         *ngFor="let photo of photosList | paginate: { itemsPerPage: 15, currentPage: p }">
+<div class="flex-item">
+    <div *ngFor="let photo of photosList | paginate: { itemsPerPage: 15, currentPage: p }">
          
             <div class="card" >
                 <img class="card-img-top" src={{photo.url}} alt="Card image cap">

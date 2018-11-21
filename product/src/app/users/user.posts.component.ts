@@ -7,7 +7,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
     templateUrl: 'user.posts.component.html'
 } )
 
-export class UserPostsComponent {
+export class NgbdModalBasic {
 
 
     closeResult: string;
@@ -19,17 +19,10 @@ export class UserPostsComponent {
         this.modalService.open( content, { ariaLabelledBy: 'modal-basic-title' } ).result.then(( result ) => {
             this.closeResult = `Closed with: ${ result }`;
         }, ( reason ) => {
-            this.closeResult = `Dismissed ${ this.getDismissReason( reason ) }`;
+            
         } );
     }
 
-    private getDismissReason( reason: any ): string {
-        if ( reason === ModalDismissReasons.ESC ) {
-            return 'by pressing ESC';
-        } else if ( reason === ModalDismissReasons.BACKDROP_CLICK ) {
-            return 'by clicking on a backdrop';
-        } else {
-            return `with: ${ reason }`;
-        }
-    }
+   
 }
+

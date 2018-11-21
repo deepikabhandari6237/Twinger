@@ -5,13 +5,13 @@ import { Photos } from './photos';
 @Component( {
     selector: 'photos',
     templateUrl: 'photos.component.html',
-    styleUrls:['photos.css']
+    styleUrls: [ 'photos.css' ]
 } )
 
 export class PhotosComponent implements OnInit {
 
     photosList: Photos[];
-
+    p: number = 1;
     constructor( private apiService: APIService ) { }
 
     ngOnInit() {

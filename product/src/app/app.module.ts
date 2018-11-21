@@ -12,7 +12,7 @@ import {FooterComponent} from './footer/footer.component';
 import {HomeComponent} from './home/home.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { PhotosComponent } from './photos/photos.component';
-import { UserPostsComponent } from './users/user.posts.component';
+import { NgbdModalBasic } from './users/user.posts.component';
 import {UsersComponent} from './users/users.component';
 
 import { APIService } from './shared/api.service';
@@ -25,7 +25,7 @@ import { APIService } from './shared/api.service';
     PhotosComponent,
     FooterComponent,
     UsersComponent,
-    UserPostsComponent,
+    NgbdModalBasic,
   ],
   imports: [
     BrowserModule,
