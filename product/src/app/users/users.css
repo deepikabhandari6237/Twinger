@@ -17,6 +17,8 @@
     height:auto;
     width: auto;
     border: none;
-    color:#ffffff;
-    background-color: #ffffff;
+}
+
+.fa{
+    color:#006a4e;
 }

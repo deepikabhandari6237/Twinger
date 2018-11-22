@@ -2,16 +2,26 @@
 .navbar-expand-lg .navbar-nav .nav-link{
     padding-right: 3.5rem;
     padding-left: 3rem;
+    
+
 }
 
 .navbar-default{
-    background-color: 	#006a4e;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #006a4e;
     color:#dae9e4;
     height:170px;
 }
 
+.navbar-collapse{
+    align-content: flex-end;
+}
+
 .header{
+   
     height:170px;
+  
 }
 
 .nav-link,.navbar-brand{
@@ -23,4 +33,17 @@
 
 .nav-link:focus,.nav-link:hover{
     color:#8bcbc8;
+}
+
+.navbar-nav{
+    margin-top: auto;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color:#8bcbc8;
+}
+.custom-toggler .navbar-toggler-icon {
+    height:1.1em !important;
+    width:0.9em !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#8bcbc8' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

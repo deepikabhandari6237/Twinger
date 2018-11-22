@@ -1,16 +1,18 @@
-<div class="header">
-    <nav class="navbar navbar-default fixed-top navbar-expand-lg">
-        <div class="container-fluid">
+<div class="header d-flex">
+    <nav class="navbar fixed-top navbar-default navbar-expand-lg">
+       
             <a class="navbar-brand logo" href="#">
                 <img src="../assets/logo.png" class="logo">
             </a>
             <p>Photos:{{photosCount}}</p>
             <p>Albums:{{albumsCount}}</p>
             <p>Comments:{{commentsCount}}</p>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTwinger"
+                    aria-controls="navbarTwinger" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="navbar-toggler-icon"></i>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">  
+             <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarTwinger">  
                 <ul class="navbar-nav">
                     <li class="nav-item" routerLinkActive="active"
                         [routerLinkActiveOptions]="{exact:true}">

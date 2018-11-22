@@ -1,6 +1,6 @@
 <div class="flex-item">
     <div *ngFor="let album of albumsList | paginate: { itemsPerPage: 17, currentPage: p }">
-        <div class="card">
+        <div class="card shadow-sm">
             <div class="card-title"> {{album.title}}</div>
             <span class="fa fa-picture-o"></span>
         </div>

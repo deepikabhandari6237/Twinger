@@ -2,7 +2,7 @@
 <div class="flex-item">
     <div *ngFor="let photo of photosList | paginate: { itemsPerPage: 15, currentPage: p }">
          
-            <div class="card" >
+            <div class="card shadow-sm" >
                 <img class="card-img-top" src={{photo.url}} alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text"> {{photo.title}}</p>
