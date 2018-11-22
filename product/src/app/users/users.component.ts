@@ -20,7 +20,7 @@ export class UsersComponent implements OnInit {
     }
 
     getUsers() {
-        this.apiService.getAllUsers().subscribe(
+        this.apiService.getAllUsers().then(
             ( data: Users[] ) => {
                 this.usersList = data;
 

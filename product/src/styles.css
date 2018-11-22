@@ -1,74 +1,35 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 18 Nov, 2018, 1:47:24 PM
-    Author     : deepika
-*/
-
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding-right: 3.5rem;
-    padding-left: 3rem;
-}
-
-.navbar-default{
-    background-color: 	#006a4e;
-    color:#dae9e4;
-}
-
-.nav-link,.navbar-brand{
-    color:#dae9e4;
-    font-family:Times;
-    font-size: 1.28em;
-    font-style: italic;
-}
-
-.nav-link:focus,.nav-link:hover{
-    color:#8bcbc8;
+body{
+    height:100%;
+    width:100%;    
+    position:absolute;
 }
 
 .flex-container{
     display:flex;
     flex-wrap: wrap;
-    margin-top: 90px;
-    margin-bottom: 50px;
+      position:absolute;
 }
 
 .flex-right-wrapper{
     flex:1 0 3%;
-
-
 }
 
 .flex-middle-wrapper{
-    flex:2 0 70%;
+    flex:0 0 70%;
 }
 
 .flex-left-wrapper{
-    flex:1 0 13%;
-    border-right:1px solid #dae9e4;
-}
-
-
-
-.card{
-    margin-top: 1rem;
-    width: 49rem;
-    padding: 1rem;
-    height:8rem;
+    flex:1 0 15%;
+    border-right:1.8px solid #dae9e4;
 }
 
 
 .flex-item{
     display:flex;
     flex-wrap:wrap;
+    padding:1rem;
 }
 
-.card-heading-color{
-    background-color:#dde2f9
-}
 
 .ngx-pagination{
     margin:1rem;

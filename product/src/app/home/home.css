@@ -1,0 +1,13 @@
+
+.card{
+    margin-top: 1rem;
+    margin:2.1rem;
+    width: auto;
+    padding: 1rem;
+    height:inherit;
+}
+
+
+.card-heading-color{
+    background-color:#dde2f9
+}
