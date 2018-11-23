@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders, HttpErrorResponse} from '@angular/common/http';
-import {Posts} from '../home/posts';
+
 
 @Injectable()
 export class APIService {
@@ -84,8 +84,8 @@ export class APIService {
             }).catch(error => this.handleError(error));
     }
     /* Fetch all users post*/
-    getAllUserPosts() {
-        return this.http.get(this.baseURL + '/posts')
+    getAllUserPosts(id) {
+        return this.http.get(this.baseURL + '/posts?userid='+id)
             .toPromise()
             .then((data: any) => {
                 return data;

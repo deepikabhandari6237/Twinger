@@ -2,7 +2,7 @@
 .navbar-expand-lg .navbar-nav .nav-link{
     padding-right: 3.5rem;
     padding-left: 3rem;
-    
+
 
 }
 
@@ -12,16 +12,15 @@
     background-color: #006a4e;
     color:#dae9e4;
     height:170px;
+    background-image:url("../../assets/wallpaper.jpg");
 }
 
 .navbar-collapse{
-    align-content: flex-end;
+    align-content: flex-start;
 }
 
 .header{
-   
     height:170px;
-  
 }
 
 .nav-link,.navbar-brand{
@@ -36,7 +35,7 @@
 }
 
 .navbar-nav{
-    margin-top: auto;
+    margin-left:  auto;
 }
 
 .custom-toggler.navbar-toggler {

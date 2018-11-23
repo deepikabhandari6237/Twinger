@@ -14,6 +14,7 @@ import { AlbumsComponent } from './albums/albums.component';
 import { PhotosComponent } from './photos/photos.component';
 import { NgbdModalBasic } from './users/user.posts.component';
 import {UsersComponent} from './users/users.component';
+import {PostsComponent} from './posts/posts.component';
 
 import { APIService } from './shared/api.service';
 @NgModule({
@@ -25,6 +26,7 @@ import { APIService } from './shared/api.service';
     PhotosComponent,
     FooterComponent,
     UsersComponent,
+    PostsComponent,
     NgbdModalBasic,
   ],
   imports: [

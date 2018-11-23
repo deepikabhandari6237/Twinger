@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {APIService} from '../shared/api.service'
-import {Posts} from './posts';
+import {Posts} from '../posts/posts';
+
 @Component({
     selector: 'home',
     templateUrl: 'home.component.html',
