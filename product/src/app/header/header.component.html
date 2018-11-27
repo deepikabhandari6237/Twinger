@@ -1,17 +1,36 @@
 <div class="header">
     <nav class="navbar fixed-top navbar-default navbar-expand-lg">
-       
-            <a class="navbar-brand logo" href="#">
-                <img src="../assets/logo.png" class="logo">
-            </a>
-            <p>Photos:{{photosCount}}</p>
-            <p>Albums:{{albumsCount}}</p>
-            <p>Comments:{{commentsCount}}</p>
-            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTwinger"
-                    aria-controls="navbarTwinger" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="navbar-toggler-icon"></i>
-            </button>
-             <div class="container-fluid">
+
+        <a class="navbar-brand logo" href="#">
+            <img src="../assets/logo.png" class="logo">
+        </a>
+
+        <!--<div class="notifications">
+                    <button class="btn btn-light btn-sm">
+                        Albums <span class="badge badge-light"> {{albumsCount}}</span>
+                    </button>
+                    <button class="btn btn-light btn-sm">
+                        Comments <span class="badge badge-light"> {{commentsCount}}</span>
+                    </button>
+                </div>-->
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTwinger"
+                aria-controls="navbarTwinger" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+        <div class="container-fluid">
+
+            <div class="notifications">
+                <span>  Photos</span>
+                <span class="text-center"><strong>  {{ photosCount}} </strong></span>
+            </div>
+            <div class="notifications">
+                <span>Album</span>
+                <span class="text-center"><strong>{{ albumsCount }}</strong></span>
+            </div>
+            <div class="notifications">
+                <span>Comments</span>
+                <span class="text-center"><strong>{{ commentsCount }}</strong></span>
+            </div>
             <div class="collapse navbar-collapse" id="navbarTwinger">  
                 <ul class="navbar-nav">
                     <li class="nav-item" routerLinkActive="active"

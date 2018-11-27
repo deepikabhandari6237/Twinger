@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector:'footerTwing',
+    selector:'footer',
     templateUrl:'footer.component.html',
     styleUrls:['footer.css']
 })
