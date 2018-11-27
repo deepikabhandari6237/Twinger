@@ -5,7 +5,8 @@ import { Users } from './users';
 
 @Component( {
     selector: 'users',
-    templateUrl: 'users.component.html'
+    templateUrl: 'users.component.html',
+    styleUrls:['users.css']
 } )
 
 export class UsersComponent implements OnInit {
@@ -19,7 +20,7 @@ export class UsersComponent implements OnInit {
     }
 
     getUsers() {
-        this.apiService.getAllUsers().subscribe(
+        this.apiService.getAllUsers().then(
             ( data: Users[] ) => {
                 this.usersList = data;
 

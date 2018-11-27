@@ -1,0 +1,10 @@
+
+<div class="card shadow-sm" >
+     <div *ngFor="let post of userPosts | paginate: { itemsPerPage: 10, currentPage: p }">
+        <h4 class="card-title"> {{post.title}}</h4>
+        <p class="card-text">{{post.body}}</p> 
+        <hr>
+    </div>
+</div>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

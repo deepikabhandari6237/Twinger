@@ -1,13 +1,11 @@
-
-    <h5>Users</h5>
-    <div class="list-group">
+<div class="container">
+    <div class="card shadow-sm">
+        <h5 class="users-title">USERS</h5>
         <div *ngFor="let user of usersList">                                                                                                                                                                                                                                                                          
-            <h5 class="list-group-item card-heading-color border-0">
-                <span class="fa fa-user"></span>  
+            <p class="card-text">
+                <span class="fa fa-user-circle"></span>  
                 {{user.name}}
-            </h5>
+            </p>
         </div>
     </div>
-
-
-
+</div>

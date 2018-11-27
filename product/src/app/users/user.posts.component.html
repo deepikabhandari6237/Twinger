@@ -1,1 +1,36 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Your Comments</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <div class="input-group">
+                    <input id="title" #title class="form-control" placeholder="title">
+                </div>
+                <label for="comment">Comment</label>
+                <div class="input-group">
+                    <textarea id="comment" #comment class="form-control"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="addPost(title.value,comment.value)">Add</button>
+    </div>
+</ng-template>
+
+
+<div class="container">
+<button class="btn btn-default" (click)="open(content)">
+    <i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
+</button>
+</div>
+
+
+
 

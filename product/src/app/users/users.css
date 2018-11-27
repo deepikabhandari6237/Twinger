@@ -1,0 +1,24 @@
+.card{
+    margin: 1rem;
+    width: auto;
+    padding: 1rem;
+    height:auto;
+}
+
+
+
+.users-title{
+    margin:1em;
+    margin-left:0.3em;
+    color: #006a4e;
+}
+
+.btn,.btn-default{
+    height:auto;
+    width: auto;
+    border: none;
+}
+
+.fa{
+    color:#006a4e;
+}

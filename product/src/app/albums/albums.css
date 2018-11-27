@@ -1,0 +1,10 @@
+.card{
+    margin: 0.7rem;
+    width: 12em;
+    padding: 0.7rem;
+    height:10rem;
+}
+
+.card-text{
+       font-size: 0.8rem;
+}

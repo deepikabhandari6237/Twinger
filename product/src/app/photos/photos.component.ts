@@ -1,25 +1,30 @@
-import { Component } from '@angular/core';
-import { APIService } from '../shared/api.service'
-import { Photos } from './photos';
+import {Component, OnInit} from '@angular/core';
+import {APIService} from '../shared/api.service'
+import {Photos} from './photos';
 
 @Component({
     selector: 'photos',
-    templateUrl: 'photos.component.html'
+    templateUrl: 'photos.component.html',
+    styleUrls: ['photos.css']
 })
 
-export class PhotosComponent {
-    
-    photosList:Photos[];
+export class PhotosComponent implements OnInit {
 
-   constructor(private apiService:APIService){}
+    photosList: Photos[];
+    p: number = 1;
+    constructor(private apiService: APIService) {}
 
-    getAlbums() {
-        this.apiService.getAllPhotos().subscribe(
-            ( data: Photos[] ) => {
+    ngOnInit() {
+        this.getPhotos();
+    }
+
+    /*fetch the list of Posts*/
+    getPhotos() {
+        this.apiService.getAllPhotos().then(
+            (data: Photos[]) => {
                 this.photosList = data;
+            }, (error) => {
 
-            }, ( error ) => {
-
-            } )
+            })
     }
 }

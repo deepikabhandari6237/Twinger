@@ -1,0 +1,15 @@
+
+.card{
+    margin-top: 1rem;
+    margin:2.1rem;
+    width: auto;
+    padding: 1rem;
+    height:inherit;
+    
+}
+
+
+.card-title{
+    color:#006a4e;
+    font-size: 1.3em;
+}
